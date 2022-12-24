@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./static/co.css">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="96x96">
+         
+    <title>Login</title>
+</head>
+<body>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    
+    <div class="container">
+        <nav>
+            <H1>Login</H1>
+            {{ with .Errors.Email }}
+            <p class="error">{{ . }}</p>
+            {{ end }}
+        </nav>
+        <div class="forms">
+            <form action="send" method="post">
+                <div class="input-field">
+                    <input name="username"type="text" placeholder="Enter votre nom d'utilisateur" id="username">
+                    <div class="icon">
+                        <i class="uil uil-user icon" style="color: rgb(0, 0, 0);"></i>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <input name="mail"type="email" placeholder="Enter votre email" id="email">
+                    <div class="icon"></div>
+                    <i class="uil uil-envelope icon" style="color: rgb(0, 0, 0);"></i>
+                </div>
+                <div class="input-field">
+                    <input name ="password"type="password"class="password" placeholder="Enter votre Mot de passe" id="password">
+                    <div class="icon">
+                        <i class="uil uil-lock icon" style="color: rgb(0, 0, 0);"></i>
+                        <i class="uil uil-eye-slash showHidePw" style="color: rgb(0, 0, 0);"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+                        <label for="logCheck" class="text">Ce souvenir de moi</label>
+                    </div>
+                        
+                    <a href="/site" class="text">Mots de passe oublier?</a>
+                </div>
+                
+                <div class="input-fields button">
+                    <input type="submit" value="Ce connecter?">
+                </div>
+                
+                
+
+                <div class="login-signup">
+                    <span class="text">Je suis déjà un membre
+                        <a href="/regs" class="text signup-link">Ce connecter?</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

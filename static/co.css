@@ -1,0 +1,198 @@
+body{
+    background: url(/static/img/test.jpg);
+    background-size: auto;
+}
+
+.container{
+    background-color: rgba(137, 43, 226, 0.315);
+    background-size: cover;
+    height: 50%;
+    width: 30%;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+nav{
+    background-color: rgb(255,255,255,0.5);
+    color: aliceblue;
+    padding: auto;
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.forms{
+    padding-top: 5%;
+    margin: auto;
+    
+    padding-bottom: 2rem;
+}
+
+
+.container span.title{
+   
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(138,43,226);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+}
+.forms .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 25%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+    
+}
+.input-field input{
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    padding: 0 35px;
+    border: none;
+    margin: auto;
+    font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+    margin-right: 20px;
+    padding: 12px;
+    border-right: 1px solid rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background: url(/static/img/fond.png);
+    opacity:(0.50);
+}
+.forms .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    color: aliceblue;
+    
+}
+.forms .checkbox-text select{
+    position: absolute;
+    height: 5%;
+    width: 10%;
+    
+    border: none;
+    margin: auto;
+    
+    border-bottom: 2px solid #ccc;
+    
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.forms .login-signup{
+    
+    margin-top: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+.forms .login-signup a{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+/* parti pour le bouton accepter (s!!!!!!!)*/
+.forms .input-fields{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 30%;
+    border-radius: 10px;
+    
+}
+
+.forms .input-fields input{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    padding: 0 35px;
+    border: none;
+    margin: auto;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: url(/static/img/fond.png);
+}
+
+.forms .input-fields input:hover{
+    background-color: aliceblue;
+}
+.forms .input-fields button{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    padding: 0 35px;
+    border: none;
+    margin: auto;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background: url(/static/img/fond.png);
+}
+.modif{
+    color: red;
+}
+
+
+@media (max-width: 1222px) {
+    body{
+        
+        background-size: auto;
+    }
+    .container{
+        background-color: rgba(137, 43, 226, 0.315);
+        
+        background-size: cover;
+        height: 100%;
+        width: 80%;
+        margin: 10%;
+        margin-top: 10%;
+        margin-bottom: 0%;
+        border-radius: 30px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .forms .input-fields button{
+        background: url(/static/img/images-Vi.jpg);
+    }
+    .forms .input-field{
+        margin-right: 5%;
+    }
+    .input-field i{
+        margin-right: 5%;
+    }
+}

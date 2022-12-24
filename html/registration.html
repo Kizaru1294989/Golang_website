@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/static/co.css">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/img/images.png" sizes="96x96">
+         
+    <title>Registration</title>
+</head>
+<body>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    
+    <div class="container">
+        <nav>
+            <H1>Registration</H1>
+            {{ with .Errors.Email }}
+            <p class="error">{{ . }}</p>
+            {{ end }}
+        </nav>
+        <div class="forms">
+            <form action="zebi"method="post">
+                <div class="input-field">
+                    <input name="username"type="text" placeholder="Enter votre nom d'utilisateur" id="username">
+                    <i class="uil uil-user icon" style="color: rgb(0, 0, 0);"></i>
+                </div>
+                <div class="input-field">
+                    <input name="mail"type="email" placeholder="Enter votre email" id="email">
+                    <i class="uil uil-envelope icon" style="color: rgb(0, 0, 0);"></i>
+                </div>
+                <div class="input-field">
+                    <input name="password"type="password"class="password" placeholder="Enter votre Mot de passe" id="password">
+                    <i class="uil uil-lock icon" style="color: rgb(0, 0, 0);"></i>
+                    <i class="uil uil-eye-slash showHidePw" style="color: rgb(0, 0, 0);"></i>
+                </div>
+                <div class="input-field">
+                    <input name="password1"type="password"class="password" placeholder="Confirmer votre Mot de passe" id="password2">
+                    <i class="uil uil-lock icon" style="color: rgb(0, 0, 0);"></i>
+                    <i class="uil uil-eye-slash showHidePw" style="color: rgb(0, 0, 0);"></i>
+                </div>
+
+                <div class="checkbox-text"><
+                    <select name="type" id="type">
+                        <option value="Type de Compte">Type de Compte</option>
+                            <option value="Etudiant">Etudiant</option>
+                            <option value="Organisateurs">Organisateurs</option>
+                    </select>
+                </div>
+                
+                <div class="input-fields">
+                    <p id="demo"></p>
+                    <button type="submit">Essayer</button>
+                </div>
+                
+                
+
+                <div class="login-signup">
+                    <a href="#" class="text">Mots de passe oublier?</a>
+                    <br>
+                    <span class="text">Je suis déjà un membre
+                        <a href="co.html" class="text signup-link">Ce connecter?</a>
+                        
+                    </span>
+                </div>
+            <!-- Registration --> 
+        </form>
+        <script>
+        function onlyOne(checkbox) {
+            var checkboxes = document.getElementsByName('check')
+            checkboxes.forEach((item) => {
+                if (item !== checkbox) item.checked = false
+            })
+    
+            
+        }
+    
+        function myFunction() {
+            let text;
+            if (confirm("Informations Validé") == true) {
+                text = "You pressed OK!";
+                type="text/javascript" 
+                window.open("localhost:5550/pop", "nomdelafenetrepopup", "height=XXX, width=XXX, menubar='yes|no', toolbar='yes|no', location='yes|no', status='yes|no', scrollbars='yes|no'");
+
+            } else {
+                text = "You canceled!";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        
+
+        
+
+
+        </script>
+        </div>
+    </div>
+
+</body>
+</html>
